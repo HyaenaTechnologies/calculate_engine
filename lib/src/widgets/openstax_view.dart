@@ -1,0 +1,108 @@
+import 'dart:async';
+
+import 'package:calculate_engine/src/model/browser_view_model.dart';
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class OpenStaxView extends StatefulWidget {
+  const OpenStaxView({super.key});
+
+  // OpenStax Browser View State
+  @override
+  State<OpenStaxView> createState() => _OpenStaxViewState();
+}
+
+class _OpenStaxViewState extends State<OpenStaxView> {
+  Future<void>? _browserLaunched;
+
+  Future<void> _launchBrowser(Uri url) async {
+    if (!await launchUrl(
+      url,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw Exception('Browser Launch Failed: $url');
+    }
+  }
+
+  // OpenStax Browser View Widgets
+  @override
+  Widget build(BuildContext context) {
+    final Uri launchUrl =
+        Uri(scheme: 'https', host: 'openstax.org', path: 'subjects/view-all');
+    FutureBuilder<void>(
+        future: _browserLaunched, builder: _browserLaunchStatus);
+    return Scaffold(
+      body: Card(
+        child: Column(children: <Widget>[
+          Image.asset('lib/assets/openstax.png'),
+          ListTile(
+            leading: Image.asset('lib/assets/icons/book.png'),
+            subtitle: const Text(
+              'Access the Future of Education',
+              softWrap: true,
+            ),
+            title: const Text(
+              'OpenStax',
+              softWrap: true,
+            ),
+          ),
+          ButtonBar(alignment: MainAxisAlignment.end, children: <Widget>[
+            ElevatedButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => BrowserViewModel(
+                  browserLaunchedAspect: _browserLaunched,
+                  child: AlertDialog(
+                      content: const Text(
+                        'View OpenStax Website',
+                        softWrap: true,
+                      ),
+                      title: const Text(
+                        'Launch Browser',
+                        softWrap: true,
+                      ),
+                      actions: <Widget>[
+                        ButtonBar(
+                          alignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            ElevatedButton(
+                              onPressed: () => Navigator.pop(context, 'Cancel'),
+                              child: const Text(
+                                'Cancel',
+                                softWrap: true,
+                              ),
+                            ),
+                            ElevatedButton(
+                              onPressed: () => setState(() {
+                                _browserLaunched = _launchBrowser(launchUrl);
+                              }),
+                              child: const Text(
+                                'Launch',
+                                softWrap: true,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ]),
+                ),
+              ),
+              child: const Text(
+                'Visit openStax',
+                softWrap: true,
+              ),
+            ),
+          ]),
+        ]),
+      ),
+    );
+  }
+}
+
+Widget _browserLaunchStatus(
+    BuildContext context, AsyncSnapshot<void> snapshot) {
+  if (snapshot.hasError) {
+    return Text('Snapshot Error: ${snapshot.error}');
+  } else {
+    return const Text('Launching Browser');
+  }
+}
