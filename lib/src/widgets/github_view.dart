@@ -51,7 +51,7 @@ class _GitHubViewState extends State<GitHubView> {
           tooltip: 'Home',
         ),
         title: const Text(
-          'GitHub Source',
+          'GitHub',
           softWrap: true,
         ),
       ),
@@ -62,7 +62,7 @@ class _GitHubViewState extends State<GitHubView> {
             ListTile(
               leading: Image.asset('lib/assets/icons/web_dev.png'),
               subtitle: const Text(
-                'Build from here',
+                'Version Control System',
                 softWrap: true,
               ),
               title: const Text(
@@ -78,7 +78,7 @@ class _GitHubViewState extends State<GitHubView> {
                     browserLaunchedDependent: _browserLaunched,
                     child: AlertDialog(
                         content: const Text(
-                          'View GitHub Source',
+                          'GitHub Repository',
                           softWrap: true,
                         ),
                         title: const Text(
@@ -112,7 +112,7 @@ class _GitHubViewState extends State<GitHubView> {
                   ),
                 ),
                 child: const Text(
-                  'View Source',
+                  'View Repository',
                   softWrap: true,
                 ),
               ),
@@ -127,8 +127,22 @@ class _GitHubViewState extends State<GitHubView> {
 Widget _browserLaunchStatus(
     BuildContext context, AsyncSnapshot<void> snapshot) {
   if (snapshot.hasError) {
-    return Text('Snapshot Error: ${snapshot.error}');
+    return SnackBar(
+      content: Text(
+        'Snapshot Error: ${snapshot.error}',
+        softWrap: true,
+      ),
+      elevation: 6,
+      showCloseIcon: true,
+    );
   } else {
-    return const Text('Launching Browser');
+    return const SnackBar(
+      content: Text(
+        'Launching Browser',
+        softWrap: true,
+      ),
+      elevation: 6,
+      showCloseIcon: true,
+    );
   }
 }

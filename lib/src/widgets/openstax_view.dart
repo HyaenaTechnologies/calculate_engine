@@ -43,7 +43,7 @@ class _OpenStaxViewState extends State<OpenStaxView> {
           ListTile(
             leading: Image.asset('lib/assets/icons/book.png'),
             subtitle: const Text(
-              'Access the Future of Education',
+              'Access The Future of Education',
               softWrap: true,
             ),
             title: const Text(
@@ -59,7 +59,7 @@ class _OpenStaxViewState extends State<OpenStaxView> {
                   browserLaunchedDependent: _browserLaunched,
                   child: AlertDialog(
                       content: const Text(
-                        'View OpenStax Website',
+                        'OpenStax Website',
                         softWrap: true,
                       ),
                       title: const Text(
@@ -92,7 +92,7 @@ class _OpenStaxViewState extends State<OpenStaxView> {
                 ),
               ),
               child: const Text(
-                'Visit openStax',
+                'View openStax',
                 softWrap: true,
               ),
             ),
@@ -103,11 +103,26 @@ class _OpenStaxViewState extends State<OpenStaxView> {
   }
 }
 
+// Replace Text Widgets with Snack Bars
 Widget _browserLaunchStatus(
     BuildContext context, AsyncSnapshot<void> snapshot) {
   if (snapshot.hasError) {
-    return Text('Snapshot Error: ${snapshot.error}');
+    return SnackBar(
+      content: Text(
+        'Snapshot Error: ${snapshot.error}',
+        softWrap: true,
+      ),
+      elevation: 6,
+      showCloseIcon: true,
+    );
   } else {
-    return const Text('Launching Browser');
+    return const SnackBar(
+      content: Text(
+        'Launching Browser',
+        softWrap: true,
+      ),
+      elevation: 6,
+      showCloseIcon: true,
+    );
   }
 }
