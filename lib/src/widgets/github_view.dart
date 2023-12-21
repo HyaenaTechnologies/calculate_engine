@@ -62,7 +62,7 @@ class _GitHubViewState extends State<GitHubView> {
             ListTile(
               leading: Image.asset('lib/assets/icons/web_dev.png'),
               subtitle: const Text(
-                'Version Control System',
+                'Source Code Platform',
                 softWrap: true,
               ),
               title: const Text(
