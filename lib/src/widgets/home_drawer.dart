@@ -48,7 +48,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
             ListTile(
               enableFeedback: true,
               leading: Image.asset('lib/assets/icons/summation.png'),
-              onTap: () => {context.go('/in_dev'), homeRouteTile(1)},
+              onTap: () => {
+                context.go('/in_dev'),
+                homeRouteTile(1),
+              },
               selected: _homeRouteTile == 1,
               title: const Text(
                 'Calculus Calculator',
@@ -58,7 +61,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
             ListTile(
               enableFeedback: true,
               leading: Image.asset('lib/assets/icons/web_dev.png'),
-              onTap: () => {context.go('/github'), homeRouteTile(2)},
+              onTap: () => {
+                context.go('/github'),
+                homeRouteTile(2),
+              },
               selected: _homeRouteTile == 2,
               title: const Text(
                 'GitHub Source',
@@ -68,7 +74,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
             ListTile(
               enableFeedback: true,
               leading: Image.asset('lib/assets/icons/list.png'),
-              onTap: () => {context.go('/in_dev'), homeRouteTile(3)},
+              onTap: () => {
+                context.go('/in_dev'),
+                homeRouteTile(3),
+              },
               selected: _homeRouteTile == 3,
               title: const Text(
                 'Lists Calculator',
@@ -78,7 +87,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
             ListTile(
               enableFeedback: true,
               leading: Image.asset('lib/assets/icons/matrix.png'),
-              onTap: () => {context.go('/in_dev'), homeRouteTile(4)},
+              onTap: () => {
+                context.go('/in_dev'),
+                homeRouteTile(4),
+              },
               selected: _homeRouteTile == 4,
               title: const Text(
                 'Matrices Calculator',
@@ -88,7 +100,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
             ListTile(
               enableFeedback: true,
               leading: Image.asset('lib/assets/icons/analysis.png'),
-              onTap: () => {context.go('/in_dev'), homeRouteTile(5)},
+              onTap: () => {
+                context.go('/in_dev'),
+                homeRouteTile(5),
+              },
               selected: _homeRouteTile == 5,
               title: const Text(
                 'Statistics Calculator',
@@ -98,7 +113,10 @@ class _HomeDrawerState extends State<HomeDrawer> {
             ListTile(
               enableFeedback: true,
               leading: Image.asset('lib/assets/icons/trigonometry.png'),
-              onTap: () => {context.go('/in_dev'), homeRouteTile(6)},
+              onTap: () => {
+                context.go('/in_dev'),
+                homeRouteTile(6),
+              },
               selected: _homeRouteTile == 6,
               title: const Text(
                 'Trigonometry Calculator',
