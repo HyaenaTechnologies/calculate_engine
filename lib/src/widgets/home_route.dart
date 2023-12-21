@@ -52,7 +52,7 @@ class _HomeRouteState extends State<HomeRoute> {
         ),
       ][_homeRouteNavigation],
       bottomNavigationBar: HomeRouteModel(
-        homeRouteNavigationAspect: _homeRouteNavigation,
+        homeRouteNavigationDependent: _homeRouteNavigation,
         child: NavigationBar(
           elevation: 6,
           onDestinationSelected: (int index) {

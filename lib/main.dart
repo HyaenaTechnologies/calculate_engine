@@ -55,7 +55,6 @@ class _CalculateEngineState extends State<CalculateEngine> {
         builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
       ColorScheme darkScheme;
       ColorScheme lightScheme;
-
       if (darkDynamic != null && lightDynamic != null) {
         darkScheme = darkDynamic.harmonized();
         darkCustomColors = darkCustomColors.harmonized(darkScheme);

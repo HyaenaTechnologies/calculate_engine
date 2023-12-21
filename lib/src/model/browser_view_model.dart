@@ -1,30 +1,30 @@
 import 'package:flutter/material.dart';
 
-enum BrowserViewAspects {
-  browserLaunchedAspect,
+enum BrowserViewDependents {
+  browserLaunchedDependent,
 }
 
-class BrowserViewModel extends InheritedModel<BrowserViewAspects> {
-  final Future<void>? browserLaunchedAspect;
+class BrowserViewModel extends InheritedModel<BrowserViewDependents> {
+  final Future<void>? browserLaunchedDependent;
 
   const BrowserViewModel({
     super.key,
-    this.browserLaunchedAspect,
+    this.browserLaunchedDependent,
     required super.child,
   });
 
   // Browser View Model Update Notifier
   @override
   bool updateShouldNotify(BrowserViewModel oldWidget) {
-    return browserLaunchedAspect != oldWidget.browserLaunchedAspect;
+    return browserLaunchedDependent != oldWidget.browserLaunchedDependent;
   }
 
   // Browser View Model Dependent Update Notifier
   @override
   bool updateShouldNotifyDependent(
-      BrowserViewModel oldWidget, Set<BrowserViewAspects> dependencies) {
-    if (browserLaunchedAspect != oldWidget.browserLaunchedAspect &&
-        dependencies.contains(BrowserViewAspects.browserLaunchedAspect)) {
+      BrowserViewModel oldWidget, Set<BrowserViewDependents> dependencies) {
+    if (browserLaunchedDependent != oldWidget.browserLaunchedDependent &&
+        dependencies.contains(BrowserViewDependents.browserLaunchedDependent)) {
       return true;
     }
     return false;

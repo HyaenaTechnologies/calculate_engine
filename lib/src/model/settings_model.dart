@@ -1,38 +1,38 @@
 import 'package:flutter/material.dart';
 
-enum SettingsAspects {
-  settingsNavigationAspect,
-  settingsTileAspect,
+enum SettingsDependents {
+  darkSchemeDependent,
+  lightSchemeDependent,
 }
 
-class HomeRouteModel extends InheritedModel<SettingsAspects> {
-  final Color? settingsNavigationAspect;
-  final Color? settingsTileAspect;
+class HomeRouteModel extends InheritedModel<SettingsDependents> {
+  final ColorScheme? darkSchemeDependent;
+  final ColorScheme? lightSchemeDependent;
 
   const HomeRouteModel({
     super.key,
-    this.settingsNavigationAspect,
-    this.settingsTileAspect,
+    this.darkSchemeDependent,
+    this.lightSchemeDependent,
     required super.child,
   });
 
   // Home Route Model Update Notifier
   @override
   bool updateShouldNotify(HomeRouteModel oldWidget) {
-    return settingsNavigationAspect != oldWidget.settingsNavigationAspect ||
-        settingsTileAspect != oldWidget.settingsTileAspect;
+    return darkSchemeDependent != oldWidget.darkSchemeDependent ||
+        lightSchemeDependent != oldWidget.lightSchemeDependent;
   }
 
   // Home Route Model Dependent Update Notifier
   @override
   bool updateShouldNotifyDependent(
-      HomeRouteModel oldWidget, Set<SettingsAspects> dependencies) {
-    if (settingsNavigationAspect != oldWidget.settingsNavigationAspect &&
-        dependencies.contains(SettingsAspects.settingsNavigationAspect)) {
+      HomeRouteModel oldWidget, Set<SettingsDependents> dependencies) {
+    if (darkSchemeDependent != oldWidget.darkSchemeDependent &&
+        dependencies.contains(SettingsDependents.darkSchemeDependent)) {
       return true;
     }
-    if (settingsTileAspect != oldWidget.settingsTileAspect &&
-        dependencies.contains(SettingsAspects.settingsTileAspect)) {
+    if (lightSchemeDependent != oldWidget.lightSchemeDependent &&
+        dependencies.contains(SettingsDependents.lightSchemeDependent)) {
       return true;
     }
     return false;

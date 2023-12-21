@@ -51,7 +51,7 @@ class _OpenStaxViewState extends State<OpenStaxView> {
               onPressed: () => showDialog<String>(
                 context: context,
                 builder: (BuildContext context) => BrowserViewModel(
-                  browserLaunchedAspect: _browserLaunched,
+                  browserLaunchedDependent: _browserLaunched,
                   child: AlertDialog(
                       content: const Text(
                         'View OpenStax Website',

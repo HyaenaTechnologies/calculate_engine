@@ -72,7 +72,7 @@ class _GitHubViewState extends State<GitHubView> {
                 onPressed: () => showDialog<String>(
                   context: context,
                   builder: (BuildContext context) => BrowserViewModel(
-                    browserLaunchedAspect: _browserLaunched,
+                    browserLaunchedDependent: _browserLaunched,
                     child: AlertDialog(
                         content: const Text(
                           'View GitHub Source',

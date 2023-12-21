@@ -1,38 +1,41 @@
 import 'package:flutter/material.dart';
 
-enum HomeRouteAspects {
-  homeRouteNavigationAspect,
-  homeRouteTileAspect,
+enum HomeRouteDependents {
+  homeRouteNavigationDependent,
+  homeRouteTileDependent,
 }
 
-class HomeRouteModel extends InheritedModel<HomeRouteAspects> {
-  final int? homeRouteNavigationAspect;
-  final int? homeRouteTileAspect;
+class HomeRouteModel extends InheritedModel<HomeRouteDependents> {
+  final int? homeRouteNavigationDependent;
+  final int? homeRouteTileDependent;
 
   const HomeRouteModel({
     super.key,
-    this.homeRouteNavigationAspect,
-    this.homeRouteTileAspect,
+    this.homeRouteNavigationDependent,
+    this.homeRouteTileDependent,
     required super.child,
   });
 
   // Home Route Model Update Notifier
   @override
   bool updateShouldNotify(HomeRouteModel oldWidget) {
-    return homeRouteNavigationAspect != oldWidget.homeRouteNavigationAspect ||
-        homeRouteTileAspect != oldWidget.homeRouteTileAspect;
+    return homeRouteNavigationDependent !=
+            oldWidget.homeRouteNavigationDependent ||
+        homeRouteTileDependent != oldWidget.homeRouteTileDependent;
   }
 
   // Home Route Model Dependent Update Notifier
   @override
   bool updateShouldNotifyDependent(
-      HomeRouteModel oldWidget, Set<HomeRouteAspects> dependencies) {
-    if (homeRouteNavigationAspect != oldWidget.homeRouteNavigationAspect &&
-        dependencies.contains(HomeRouteAspects.homeRouteNavigationAspect)) {
+      HomeRouteModel oldWidget, Set<HomeRouteDependents> dependencies) {
+    if (homeRouteNavigationDependent !=
+            oldWidget.homeRouteNavigationDependent &&
+        dependencies
+            .contains(HomeRouteDependents.homeRouteNavigationDependent)) {
       return true;
     }
-    if (homeRouteTileAspect != oldWidget.homeRouteTileAspect &&
-        dependencies.contains(HomeRouteAspects.homeRouteTileAspect)) {
+    if (homeRouteTileDependent != oldWidget.homeRouteTileDependent &&
+        dependencies.contains(HomeRouteDependents.homeRouteTileDependent)) {
       return true;
     }
     return false;
