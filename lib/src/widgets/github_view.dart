@@ -31,11 +31,14 @@ class _GitHubViewState extends State<GitHubView> {
   @override
   Widget build(BuildContext context) {
     final Uri launchUrl = Uri(
-        scheme: 'https',
-        host: 'github.com',
-        path: 'HyaenaTechnologies/hyaena_calculate_engine');
+      scheme: 'https',
+      host: 'github.com',
+      path: 'HyaenaTechnologies/hyaena_calculate_engine',
+    );
     FutureBuilder<void>(
-        future: _browserLaunched, builder: _browserLaunchStatus);
+      future: _browserLaunched,
+      builder: _browserLaunchStatus,
+    );
     return Scaffold(
       appBar: AdaptiveAppBar(
         elevation: 6,

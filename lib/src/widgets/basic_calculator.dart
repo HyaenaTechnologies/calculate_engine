@@ -15,12 +15,12 @@ class _BasicCalculatorState extends State<BasicCalculator> {
     return Scaffold(
       body: ListView(children: <Widget>[
         const Text(
-          '',
+          '//Output',
           softWrap: true,
           textAlign: TextAlign.center,
         ),
         const Text(
-          '',
+          '//Input',
           softWrap: true,
           textAlign: TextAlign.center,
         ),

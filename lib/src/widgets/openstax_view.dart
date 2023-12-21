@@ -27,10 +27,15 @@ class _OpenStaxViewState extends State<OpenStaxView> {
   // OpenStax Browser View Widgets
   @override
   Widget build(BuildContext context) {
-    final Uri launchUrl =
-        Uri(scheme: 'https', host: 'openstax.org', path: 'subjects/view-all');
+    final Uri launchUrl = Uri(
+      scheme: 'https',
+      host: 'openstax.org',
+      path: 'subjects/view-all',
+    );
     FutureBuilder<void>(
-        future: _browserLaunched, builder: _browserLaunchStatus);
+      future: _browserLaunched,
+      builder: _browserLaunchStatus,
+    );
     return Scaffold(
       body: Card(
         child: Column(children: <Widget>[
