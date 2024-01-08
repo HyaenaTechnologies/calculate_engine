@@ -34,5 +34,7 @@ Calculators, Steps and promote [OpenStax][Stax], [Rice University][Rice].
 - [Visual Studio Code][VSCode]
 
 ```shell
+git clone
+
 flutter build
 ```
