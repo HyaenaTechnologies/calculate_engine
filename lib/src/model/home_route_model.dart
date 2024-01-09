@@ -16,7 +16,7 @@ class HomeRouteModel extends InheritedModel<HomeRouteDependents> {
     required super.child,
   });
 
-  // Home Route Model Update Notifier
+  /// Home Route Model Update Notifier
   @override
   bool updateShouldNotify(HomeRouteModel oldWidget) {
     return homeRouteNavigationDependent !=
@@ -24,7 +24,7 @@ class HomeRouteModel extends InheritedModel<HomeRouteDependents> {
         homeRouteTileDependent != oldWidget.homeRouteTileDependent;
   }
 
-  // Home Route Model Dependent Update Notifier
+  /// Home Route Model Dependent Update Notifier
   @override
   bool updateShouldNotifyDependent(
       HomeRouteModel oldWidget, Set<HomeRouteDependents> dependencies) {

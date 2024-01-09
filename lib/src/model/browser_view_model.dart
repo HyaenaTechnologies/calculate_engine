@@ -13,13 +13,13 @@ class BrowserViewModel extends InheritedModel<BrowserViewDependents> {
     required super.child,
   });
 
-  // Browser View Model Update Notifier
+  /// Browser View Model Update Notifier
   @override
   bool updateShouldNotify(BrowserViewModel oldWidget) {
     return browserLaunchedDependent != oldWidget.browserLaunchedDependent;
   }
 
-  // Browser View Model Dependent Update Notifier
+  /// Browser View Model Dependent Update Notifier
   @override
   bool updateShouldNotifyDependent(
       BrowserViewModel oldWidget, Set<BrowserViewDependents> dependencies) {

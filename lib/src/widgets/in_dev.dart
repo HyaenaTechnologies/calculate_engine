@@ -6,13 +6,13 @@ import 'package:go_router/go_router.dart';
 class InDev extends StatefulWidget {
   const InDev({super.key});
 
-  // In Development State
+  /// In Development State
   @override
   State<InDev> createState() => _InDevState();
 }
 
 class _InDevState extends State<InDev> {
-  // In Development Widgets
+  /// In Development Widgets
   @override
   Widget build(BuildContext context) {
     return Scaffold(

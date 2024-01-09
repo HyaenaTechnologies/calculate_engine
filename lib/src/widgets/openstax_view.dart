@@ -7,7 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 class OpenStaxView extends StatefulWidget {
   const OpenStaxView({super.key});
 
-  // OpenStax Browser View State
+  /// OpenStax Browser View State
   @override
   State<OpenStaxView> createState() => _OpenStaxViewState();
 }
@@ -24,7 +24,7 @@ class _OpenStaxViewState extends State<OpenStaxView> {
     }
   }
 
-  // OpenStax Browser View Widgets
+  /// OpenStax Browser View Widgets
   @override
   Widget build(BuildContext context) {
     final Uri launchUrl = Uri(

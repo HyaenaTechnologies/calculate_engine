@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 class GitHubView extends StatefulWidget {
   const GitHubView({super.key});
 
-  // GitHub Browser View State
+  /// GitHub Browser View State
   @override
   State<GitHubView> createState() => _GitHubViewState();
 }
@@ -27,7 +27,7 @@ class _GitHubViewState extends State<GitHubView> {
     }
   }
 
-  // GitHub Browser View Widgets
+  /// GitHub Browser View Widgets
   @override
   Widget build(BuildContext context) {
     final Uri launchUrl = Uri(

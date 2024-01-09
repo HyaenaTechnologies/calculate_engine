@@ -10,7 +10,7 @@ import 'package:go_router/go_router.dart';
 class HomeRoute extends StatefulWidget {
   const HomeRoute({super.key});
 
-  // Home Route State
+  /// Home Route State
   @override
   State<HomeRoute> createState() => _HomeRouteState();
 }
@@ -18,7 +18,7 @@ class HomeRoute extends StatefulWidget {
 class _HomeRouteState extends State<HomeRoute> {
   int _homeRouteNavigation = 0;
 
-  // Home Route Widgets
+  /// Home Route Widgets
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _HomeRouteState extends State<HomeRoute> {
                 enableFeedback: true,
                 icon: Image.asset('lib/assets/icons/settings.png'),
                 onPressed: () => {
-                  context.go('/in_dev'),
+                  context.go('/settings'),
                 },
                 tooltip: 'Settings',
               ),

@@ -5,28 +5,42 @@ enum SettingsDependents {
   lightSchemeDependent,
 }
 
-class HomeRouteModel extends InheritedModel<SettingsDependents> {
+class SettingsModel extends InheritedModel<SettingsDependents> {
   final ColorScheme? darkSchemeDependent;
   final ColorScheme? lightSchemeDependent;
 
-  const HomeRouteModel({
+  const SettingsModel({
     super.key,
     this.darkSchemeDependent,
     this.lightSchemeDependent,
     required super.child,
   });
 
-  // Home Route Model Update Notifier
+  /// Settings Model Color Scheme
+  static ColorScheme? darkSchemeOf(BuildContext context) {
+    return InheritedModel.inheritFrom<SettingsModel>(context,
+            aspect: SettingsDependents.darkSchemeDependent)
+        ?.darkSchemeDependent;
+  }
+
+  /// Settings Model Color Scheme
+  static ColorScheme? lightSchemeOf(BuildContext context) {
+    return InheritedModel.inheritFrom<SettingsModel>(context,
+            aspect: SettingsDependents.lightSchemeDependent)
+        ?.lightSchemeDependent;
+  }
+
+  /// Settings Model Update Notifier
   @override
-  bool updateShouldNotify(HomeRouteModel oldWidget) {
+  bool updateShouldNotify(SettingsModel oldWidget) {
     return darkSchemeDependent != oldWidget.darkSchemeDependent ||
         lightSchemeDependent != oldWidget.lightSchemeDependent;
   }
 
-  // Home Route Model Dependent Update Notifier
+  /// Settings Dependent Update Notifier
   @override
   bool updateShouldNotifyDependent(
-      HomeRouteModel oldWidget, Set<SettingsDependents> dependencies) {
+      SettingsModel oldWidget, Set<SettingsDependents> dependencies) {
     if (darkSchemeDependent != oldWidget.darkSchemeDependent &&
         dependencies.contains(SettingsDependents.darkSchemeDependent)) {
       return true;

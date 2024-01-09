@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 const customColor = Color(0xFFDE7B3B);
 
-// Material Design Theme Dark
+/// Material Design Theme Dark
 CustomColors darkCustomColors = const CustomColors(
   sourceCustomColor: Color(0xFFBF5A00),
   customColor: Color(0xFFFFB68B),
@@ -12,7 +12,7 @@ CustomColors darkCustomColors = const CustomColors(
   onCustomColorContainer: Color(0xFFFFDBC8),
 );
 
-// Material Design Theme Light
+/// Material Design Theme Light
 CustomColors lightCustomColors = const CustomColors(
   sourceCustomColor: Color(0xFFBF5A00),
   customColor: Color(0xFF994700),
@@ -21,10 +21,7 @@ CustomColors lightCustomColors = const CustomColors(
   onCustomColorContainer: Color(0xFF321300),
 );
 
-/// Defines a set of custom colors, each comprised of 4 complementary tones.
-///
-/// See also:
-///   * <https://m3.material.io/styles/color/the-color-system/custom-colors>
+/// Custom Colors Theme Extension
 @immutable
 class CustomColors extends ThemeExtension<CustomColors> {
   const CustomColors({
@@ -41,6 +38,7 @@ class CustomColors extends ThemeExtension<CustomColors> {
   final Color? customColorContainer;
   final Color? onCustomColorContainer;
 
+  /// Custom Colors
   @override
   CustomColors copyWith({
     Color? sourceCustomColor,
@@ -59,6 +57,7 @@ class CustomColors extends ThemeExtension<CustomColors> {
     );
   }
 
+  /// Custom Color Theme Extension
   @override
   CustomColors lerp(ThemeExtension<CustomColors>? other, double t) {
     if (other is! CustomColors) {

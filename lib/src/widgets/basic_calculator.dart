@@ -3,30 +3,30 @@ import 'package:flutter/material.dart';
 class BasicCalculator extends StatefulWidget {
   const BasicCalculator({super.key});
 
-  // Basic Calculator State
+  /// Basic Calculator State
   @override
   State<BasicCalculator> createState() => _BasicCalculatorState();
 }
 
 class _BasicCalculatorState extends State<BasicCalculator> {
-  // Basic Calculator Widgets
+  /// Basic Calculator Widgets
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: <Widget>[
         const Text(
-          '//Output',
+          '/// Output',
           softWrap: true,
           textAlign: TextAlign.center,
         ),
         const Text(
-          '//Input',
+          '/// Input',
           softWrap: true,
           textAlign: TextAlign.center,
         ),
         Flex(direction: Axis.horizontal, children: <Widget>[
           Flexible(
-            fit: FlexFit.tight,
+            fit: FlexFit.loose,
             flex: 6,
             child: ButtonBar(
                 alignment: MainAxisAlignment.center,
@@ -80,7 +80,7 @@ class _BasicCalculatorState extends State<BasicCalculator> {
         ]),
         Flex(direction: Axis.horizontal, children: <Widget>[
           Flexible(
-            fit: FlexFit.tight,
+            fit: FlexFit.loose,
             flex: 6,
             child: ButtonBar(
                 alignment: MainAxisAlignment.center,
@@ -134,7 +134,7 @@ class _BasicCalculatorState extends State<BasicCalculator> {
         ]),
         Flex(direction: Axis.horizontal, children: <Widget>[
           Flexible(
-            fit: FlexFit.tight,
+            fit: FlexFit.loose,
             flex: 6,
             child: ButtonBar(
                 alignment: MainAxisAlignment.center,
@@ -188,7 +188,7 @@ class _BasicCalculatorState extends State<BasicCalculator> {
         ]),
         Flex(direction: Axis.horizontal, children: <Widget>[
           Flexible(
-            fit: FlexFit.tight,
+            fit: FlexFit.loose,
             flex: 6,
             child: ButtonBar(
                 alignment: MainAxisAlignment.center,
@@ -243,7 +243,7 @@ class _BasicCalculatorState extends State<BasicCalculator> {
         ]),
         Flex(direction: Axis.horizontal, children: <Widget>[
           Flexible(
-            fit: FlexFit.tight,
+            fit: FlexFit.loose,
             flex: 6,
             child: ButtonBar(
                 alignment: MainAxisAlignment.center,

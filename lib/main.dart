@@ -5,6 +5,7 @@ import 'package:calculate_engine/src/theme/custom_color.dart';
 import 'package:calculate_engine/src/widgets/github_view.dart';
 import 'package:calculate_engine/src/widgets/home_route.dart';
 import 'package:calculate_engine/src/widgets/in_dev.dart';
+import 'package:calculate_engine/src/widgets/settings.dart';
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
@@ -23,18 +24,38 @@ final GoRouter _navigationRouter = GoRouter(
     GoRoute(
       name: 'initial_route',
       path: '/home',
-      builder: (BuildContext context, GoRouterState state) => const HomeRoute(),
+      builder: (
+        BuildContext context,
+        GoRouterState state,
+      ) =>
+          const HomeRoute(),
     ),
     GoRoute(
       name: 'github_browser_view',
       path: '/github',
-      builder: (BuildContext context, GoRouterState state) =>
+      builder: (
+        BuildContext context,
+        GoRouterState state,
+      ) =>
           const GitHubView(),
+    ),
+    GoRoute(
+      name: 'settings_page',
+      path: '/settings',
+      builder: (
+        BuildContext context,
+        GoRouterState state,
+      ) =>
+          const SettingsPage(),
     ),
     GoRoute(
       name: 'in_development',
       path: '/in_dev',
-      builder: (BuildContext context, GoRouterState state) => const InDev(),
+      builder: (
+        BuildContext context,
+        GoRouterState state,
+      ) =>
+          const InDev(),
     ),
   ],
 );
@@ -42,13 +63,13 @@ final GoRouter _navigationRouter = GoRouter(
 class CalculateEngine extends StatefulWidget {
   const CalculateEngine({super.key});
 
-  // Calculate Engine State
+  /// Calculate Engine State
   @override
   State<CalculateEngine> createState() => _CalculateEngineState();
 }
 
 class _CalculateEngineState extends State<CalculateEngine> {
-  // Calculate Engine Widgets
+  /// Calculate Engine Widgets
   @override
   Widget build(BuildContext context) {
     return DynamicColorBuilder(
@@ -58,11 +79,12 @@ class _CalculateEngineState extends State<CalculateEngine> {
       if (darkDynamic != null && lightDynamic != null) {
         darkScheme = darkDynamic.harmonized();
         darkCustomColors = darkCustomColors.harmonized(darkScheme);
-        // Repeat for the light color scheme.
+
+        /// Repeat for the light color scheme.
         lightScheme = lightDynamic.harmonized();
         lightCustomColors = lightCustomColors.harmonized(lightScheme);
       } else {
-        // Otherwise, use fallback schemes.
+        /// Otherwise, use fallback schemes.
         darkScheme = darkColorScheme;
         lightScheme = lightColorScheme;
       }

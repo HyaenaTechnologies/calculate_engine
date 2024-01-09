@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// Material Design Theme Dark
+/// Material Design Theme Dark
 const darkColorScheme = ColorScheme(
   brightness: Brightness.dark,
   primary: Color(0xFF6DDD81),
@@ -35,7 +35,7 @@ const darkColorScheme = ColorScheme(
   scrim: Color(0xFF000000),
 );
 
-// Material Design Theme Light
+/// Material Design Theme Light
 const lightColorScheme = ColorScheme(
   brightness: Brightness.light,
   primary: Color(0xFF006E2C),

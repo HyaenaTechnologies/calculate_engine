@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 class HomeDrawer extends StatefulWidget {
   const HomeDrawer({super.key});
 
-  // Home Route Navigation Drawer State
+  /// Home Route Navigation Drawer State
   @override
   State<HomeDrawer> createState() => _HomeDrawerState();
 }
@@ -19,7 +19,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
     });
   }
 
-  // Home Route Navigation Drawer Widgets
+  /// Home Route Navigation Drawer Widgets
   @override
   Widget build(BuildContext context) {
     return HomeRouteModel(
@@ -30,7 +30,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
         child: ListView(
           children: <Widget>[
             DrawerHeader(
-              child: Image.asset('lib/assets/icons/calculator_64.png'),
+              child: Image.asset('lib/assets/icons/calculator.png'),
             ),
             ListTile(
               enableFeedback: true,
