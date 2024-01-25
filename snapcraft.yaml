@@ -1,0 +1,19 @@
+name: hyaena-calculate-engine
+base: core20
+confinement: strict
+description: |
+  Open Source Mathematics Engine
+summary: The function is to provide Calculators, and Steps.
+version: 'latest'
+
+apps:
+  flutter-application:
+    command: bin/linux/hyaena_calculate_engine
+    extensions: [flutter-dev]
+
+parts:
+  flutter-application:
+    flutter-target: lib/main.dart
+    plugin: flutter
+    source: https://github.com/HyaenaTechnologies/calculate_engine.git
+    source-type: git
