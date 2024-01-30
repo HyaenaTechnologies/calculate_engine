@@ -1,6 +1,7 @@
 import 'package:adaptive_components/adaptive_components.dart';
 import 'package:adaptive_navigation/adaptive_navigation.dart';
 import 'package:calculate_engine/src/widgets/basic_calculator.dart';
+import 'package:calculate_engine/src/widgets/home_drawer.dart';
 import 'package:calculate_engine/src/widgets/openstax_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -70,6 +71,7 @@ class _HomeRouteState extends State<HomeRoute> {
           ),
         ],
       ),
+      drawer: const HomeDrawer(),
     );
   }
 }

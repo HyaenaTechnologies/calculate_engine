@@ -44,7 +44,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       enableFeedback: true,
                       icon: Image.asset(
                         'lib/assets/icons/brightness.png',
-                        semanticLabel: 'Color Mode',
+                        semanticLabel: 'Set Theme',
                       ),
                       onPressed: () {
                         setState(() {});
@@ -55,22 +55,6 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ]),
         ]),
       ),
-    );
-  }
-}
-
-class StatelessColorScheme extends StatelessWidget {
-  const StatelessColorScheme({super.key, required this.child});
-
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedContainer(
-      padding: const EdgeInsets.all(12.0),
-      duration: const Duration(seconds: 2),
-      curve: Curves.fastOutSlowIn,
-      child: child,
     );
   }
 }
