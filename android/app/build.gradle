@@ -23,6 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
+    buildToolsVersion '34.0.0'
     namespace 'dev.hyaena_technologies.calculate_engine'
     compileSdkVersion 34
     ndkVersion flutter.ndkVersion
