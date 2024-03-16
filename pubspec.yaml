@@ -10,11 +10,11 @@ dependencies:
   animations: ^2.0.11
   cupertino_icons: ^1.0.6
   dynamic_color: ^1.7.0
-  go_router: ^13.2.0
+  go_router: ^13.2.1
   http: ^1.2.1
   intl: ^0.18.1
   shared_preferences: ^2.2.2
-  two_dimensional_scrollables: ^0.1.1
+  two_dimensional_scrollables: ^0.1.2
   url_launcher: ^6.2.5
 
 description: Open Source Mathematics Engine
