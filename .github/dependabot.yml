@@ -1,0 +1,20 @@
+updates:
+  - package-ecosystem: "github-actions"
+    commit-message:
+      prefix: "Actions"
+    directory: "/" 
+    schedule:
+      day: "saturday"
+      interval: "weekly"
+      time: "03:00"
+    
+  - package-ecosystem: "swift"
+    commit-message:
+      prefix: "Swift Package Manager"
+    directory: "/"
+    schedule:
+      day: "saturday"
+      interval: "weekly"
+      time: "03:00"
+    
+version: 2

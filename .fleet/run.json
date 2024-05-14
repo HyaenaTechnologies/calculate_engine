@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Run Bash",
+            "program": "/usr/bin/bash",
+            "type": "command"
+        },
+        {
+            "args": [
+                "build"
+            ],
+            "name": "Swift Build",
+            "program": "/usr/bin/swift/usr/bin/swift",
+            "type": "command"
+        }
+    ]
+}
