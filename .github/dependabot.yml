@@ -7,7 +7,17 @@ updates:
       day: "saturday"
       interval: "weekly"
       time: "03:00"
-    
+  
+  - package-ecosystem: "pub"
+    commit-message:
+      prefix: "Pub"
+    directory: "/web" 
+    schedule:
+      day: "saturday"
+      interval: "weekly"
+      time: "03:00"
+    versioning-strategy: auto
+
   - package-ecosystem: "swift"
     commit-message:
       prefix: "Swift Package Manager"

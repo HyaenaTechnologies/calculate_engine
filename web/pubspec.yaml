@@ -1,0 +1,51 @@
+dependencies:
+  args: ^2.4.2
+  async: ^2.11.0
+  browser_launcher: ^1.1.1
+  characters: ^1.3.0
+  cli_util: ^0.4.1
+  collection: ^1.18.0
+  convert: ^3.1.1
+  crypto: ^3.0.3
+  csslib: ^1.0.0
+  glob: ^2.1.2
+  http: ^1.2.1
+  http2: ^2.3.0
+  http_multi_server: ^3.2.1
+  http_parser: ^4.0.2
+  intl: ^0.19.0
+  intl_translation: ^0.20.0
+  io: ^1.0.4
+  json_rpc_2: ^3.0.2
+  logging: ^1.2.0
+  markdown: ^7.2.2
+  mime: ^1.0.5
+  oauth2: ^2.0.2
+  path: ^1.9.0
+  pool: ^1.5.1
+  shelf: ^1.4.1
+  shelf_proxy: ^1.0.4
+  shelf_router: ^1.1.4
+  shelf_static: ^1.1.2
+  shelf_test_handler: ^2.0.2
+  shelf_web_socket: ^2.0.0
+  sse: ^4.1.5
+  stack_trace: ^1.11.1
+  stream_channel: ^2.1.2
+  stream_transform: ^2.1.0
+  term_glyph: ^1.2.1
+  web: ^0.5.1
+  web_socket_channel: ^3.0.0
+
+
+description: "Open Source Mathematics Engine"
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
+
+environment:
+  sdk: '>=3.0.0 <=6.0.0'
+
+name: calculate_engine
+version: 0.2.0
