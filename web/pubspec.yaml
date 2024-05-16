@@ -8,6 +8,7 @@ dependencies:
   convert: ^3.1.1
   crypto: ^3.0.3
   csslib: ^1.0.0
+  file: ^7.0.0
   glob: ^2.1.2
   http: ^1.2.1
   http2: ^2.3.0
@@ -17,6 +18,7 @@ dependencies:
   intl_translation: ^0.20.0
   io: ^1.0.4
   json_rpc_2: ^3.0.2
+  json_serializable: ^6.8.0
   logging: ^1.2.0
   markdown: ^7.2.2
   mime: ^1.0.5
@@ -33,7 +35,9 @@ dependencies:
   stack_trace: ^1.11.1
   stream_channel: ^2.1.2
   stream_transform: ^2.1.0
+  sync_http: ^0.3.1
   term_glyph: ^1.2.1
+  vector_math: ^2.1.4
   web: ^0.5.1
   web_socket_channel: ^3.0.0
 
@@ -41,7 +45,7 @@ dependencies:
 description: "Open Source Mathematics Engine"
 
 dev_dependencies:
-  lints: ^3.0.0
+  lints: ^4.0.0
   test: ^1.24.0
 
 environment:
