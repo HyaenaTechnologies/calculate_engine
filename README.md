@@ -1,3 +1,4 @@
+[Dart]: https://dart.dev/
 [Fleet]: https://jetbrains.com/fleet/
 [IDEA]: https://jetbrains.com/idea/
 [Rice]: https://rice.edu
@@ -22,6 +23,7 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 
 ## Build
 
+- [Dart Language][Dart]
 - [IntelliJ IDEA][IDEA]
 - [JetBrains Fleet][Fleet] 
 - [Swift Language][Swift]
@@ -31,6 +33,12 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 git clone
 
 swift build
+```
+
+```shell
+git clone
+
+dart compile
 ```
 
 ## Install
