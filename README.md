@@ -2,9 +2,9 @@
 [Fleet]: https://jetbrains.com/fleet/
 [IDEA]: https://jetbrains.com/idea/
 [Rice]: https://rice.edu
-[Swift]: https://swift.org/
 [Stax]: https://openstax.org]
 [VSCode]: https://code.visualstudio.com/docs
+[Zig Language]: https://ziglang.org/
 
 <a href="https://github.com/HyaenaTechnologies/calculate_engine">
   <h1>
@@ -13,8 +13,6 @@
     </picture>
   </h1>
 </a>
-
-[![Docker Workflow](https://github.com/HyaenaTechnologies/calculate_engine/actions/workflows/docker.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine/actions/workflows/docker.yml)
 
 # Calculate Engine
 
@@ -26,19 +24,21 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 - [Dart Language][Dart]
 - [IntelliJ IDEA][IDEA]
 - [JetBrains Fleet][Fleet] 
-- [Swift Language][Swift]
 - [Visual Studio Code][VSCode]
-
-```shell
-git clone
-
-swift build
-```
+- [Zig][Zig Language]
 
 ```shell
 git clone
 
 dart compile
+```
+
+&&
+
+```shell
+git clone
+
+zig build
 ```
 
 ## Install
