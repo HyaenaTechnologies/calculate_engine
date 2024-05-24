@@ -4,22 +4,22 @@ import 'package:calculate_engine/src/logic//math/pi.dart';
 class Area {
   // Area of a Circle
   double circle(double radius) {
-    return pi() * radius * radius;
+    return pi() * (radius * radius);
   }
 
   // Area of a Cube
   double cube(double length) {
-    return length * length * 6;
+    return (length * length) * 6;
   }
 
   // Area of a Cylinder
   double cylinder(double height, double radius) {
-    return (pi() * radius * radius + pi() * radius * height) * 2;
+    return (2 * pi() * radius * radius) + (2 * height * pi() * radius);
   }
 
   // Area of a Hemisphere
   double hemisphere(double radius) {
-    return pi() * radius * radius * 3;
+    return (pi() * radius * radius) * 3;
   }
 
   // Area of a Parallelogram
@@ -34,7 +34,7 @@ class Area {
 
   // Area of a Sphere
   double sphere(double radius) {
-    return pi() * radius * radius * 4;
+    return (pi() * radius * radius) * 4;
   }
 
   // Area of a Square
