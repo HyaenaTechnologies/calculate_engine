@@ -4,12 +4,12 @@ import 'package:calculate_engine/src/logic//math/pi.dart';
 class Volume {
   // Volume of a Cone
   double cone(double height, double radius) {
-    return (pi() * height * radius * radius) / 3;
+    return (1 / 3) * (pi() * radius * radius) * height;
   }
 
   // Volume of a Cube
-  double cube(double length) {
-    return length * length * length;
+  double cube(double height, double length, double width) {
+    return height * length * width;
   }
 
   // Volume of a Cuboid
@@ -19,12 +19,12 @@ class Volume {
 
   // Volume of a Cylinder
   double cylinder(double height, double radius) {
-    return pi() * height * radius * radius;
+    return pi() * height * (radius * radius);
   }
 
   // Volume of a Hemisphere
   double hemisphere(double radius) {
-    return (pi() * radius * radius * radius * 2) / 3;
+    return (2 / 3) * (pi() * radius * radius * radius);
   }
 
   // Volume of a Prism
@@ -34,11 +34,11 @@ class Volume {
 
   // Volume of a Pyramid
   double pyramid(double baseArea, double height) {
-    return (baseArea * height) / 3;
+    return (1 / 3) * (baseArea * height);
   }
 
   // Volume of a Sphere
   double sphere(double radius) {
-    return (pi() * radius * radius * radius * 4) / 3;
+    return (4 / 3) * (pi() * radius * radius * radius);
   }
 }

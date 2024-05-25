@@ -2,12 +2,12 @@
 class Volume {
     // Volume of a Cone
     func cone(height: Double, radius: Double) -> Double {
-        return (pi() * height * radius * radius) / 3
+        return (1 / 3) * (pi() * radius * radius) * height
     }
 
     // Volume of a Cube
-    func cube(length: Double) -> Double {
-        return length * length * length
+    func cube(height: Double, length: Double, width: Double) -> Double {
+        return height * length * width
     }
 
     // Volume of a Cuboid
@@ -17,12 +17,12 @@ class Volume {
 
     // Volume of a Cylinder
     func cylinder(height: Double, radius: Double) -> Double {
-        return pi() * height * radius * radius
+        return pi() * height * (radius * radius)
     }
 
     // Volume of a Hemisphere
     func hemisphere(radius: Double) -> Double {
-        return (pi() * radius * radius * radius * 2) / 3
+        return (2 / 3) * (pi() * radius * radius * radius)
     }
 
     // Volume of a Prism
@@ -32,11 +32,11 @@ class Volume {
 
     // Volume of a Pyramid
     func pyramid(baseArea: Double, height: Double) -> Double {
-        return (baseArea * height) / 3
+        return (1 / 3) * (baseArea * height)
     }
 
     // Volume of a Sphere
     func sphere(radius: Double) -> Double {
-        return (pi() * radius * radius * radius * 4) / 3
+        return (4 / 3) * (pi() * radius * radius * radius)
     }
 }

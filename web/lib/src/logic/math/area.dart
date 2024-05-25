@@ -8,18 +8,18 @@ class Area {
   }
 
   // Area of a Cube
-  double cube(double length) {
-    return (length * length) * 6;
+  double cube(double length, double width) {
+    return 6 * (length * width);
   }
 
   // Area of a Cylinder
   double cylinder(double height, double radius) {
-    return (2 * pi() * radius * radius) + (2 * height * pi() * radius);
+    return (2 * height * pi() * radius) + (2 * pi() * radius * radius);
   }
 
   // Area of a Hemisphere
   double hemisphere(double radius) {
-    return (pi() * radius * radius) * 3;
+    return 3 * (pi() * radius * radius);
   }
 
   // Area of a Parallelogram
@@ -34,21 +34,21 @@ class Area {
 
   // Area of a Sphere
   double sphere(double radius) {
-    return (pi() * radius * radius) * 4;
+    return 4 * (pi() * radius * radius);
   }
 
   // Area of a Square
-  double square(double length) {
-    return length * length;
+  double square(double length, double width) {
+    return length * width;
   }
 
   // Area of a Trapezium
   double trapezium(double baseOne, double baseTwo, double height) {
-    return (baseOne + baseTwo) * height / 2;
+    return (1 / 2) * (baseOne + baseTwo) * height;
   }
 
   // Area of a Triangle
   double triangle(double base, double height) {
-    return base * height / 2;
+    return (1 / 2) * base * height;
   }
 }

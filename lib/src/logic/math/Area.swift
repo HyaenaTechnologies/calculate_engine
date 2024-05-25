@@ -6,18 +6,18 @@ class Area {
     }
 
     // Area of a Cube
-    func cube(length: Double) -> Double {
-        return (length * length) * 6
+    func cube(length: Double, width: Double) -> Double {
+        return 6 * (length * width)
     }
 
     // Area of a Cylinder
     func cylinder(height: Double, radius: Double) -> Double {
-        return (2 * pi() * radius * radius) + (2 * height * pi() * radius)
+        return (2 * height * pi() * radius) + (2 * pi() * radius * radius) 
     }
 
     // Area of a Hemisphere
     func hemisphere(radius: Double) -> Double {
-        (pi() * radius * radius) * 3
+        return 3 * (pi() * radius * radius)
     }
 
     // Area of a Parallelogram
@@ -32,21 +32,21 @@ class Area {
 
     // Area of a Sphere
     func sphere(radius: Double) -> Double {
-        return (pi() * radius * radius) * 4
+        return 4 * (pi() * radius * radius) 
     }
 
     // Area of a Square
-    func square(length: Double) -> Double {
-        return length * length
+    func square(length: Double, width: Double) -> Double {
+        return length * width
     }
 
     // Area of a Trapezium
     func trapezium(baseOne: Double, baseTwo: Double, height: Double) -> Double {
-        return (baseOne + baseTwo) * height / 2
+        return (1 / 2) * (baseOne + baseTwo) * height
     }
 
     // Area of a Triangle
     func triangle(base: Double, height: Double) -> Double {
-        return base * height / 2
+        return (1 / 2) * base * height
     }
 }
