@@ -1,5 +1,7 @@
 const std = @import("std");
 
-fn main() void {
-    std.print("Calculate Engine\n", .{});
+pub fn main() void {
+    var writer = std.io.getStdOut().writer();
+
+    writer.print("Calculate Engine\n", .{}) catch return;
 }
