@@ -4,7 +4,7 @@ const pi_value = @import("./pi.zig");
 const Volume = struct {
     // Volume of a Cone
     pub fn cone(height: f64, radius: f64) f64 {
-        return (1 / 3) * (pi() * radius * radius) * height;
+        return (1 / 3) * (pi_value.pi() * radius * radius) * height;
     }
 
     // Volume of a Cube
@@ -19,12 +19,12 @@ const Volume = struct {
 
     // Volume of a Cylinder
     pub fn cylinder(height: f64, radius: f64) f64 {
-        return pi() * height * (radius * radius);
+        return pi_value.pi() * height * (radius * radius);
     }
 
     // Volume of a Hemisphere
     pub fn hemisphere(radius: f64) f64 {
-        return (2 / 3) * (pi() * radius * radius * radius);
+        return (2 / 3) * (pi_value.pi() * radius * radius * radius);
     }
 
     // Volume of a Prism
@@ -39,6 +39,6 @@ const Volume = struct {
 
     // Volume of a Sphere
     pub fn sphere(radius: f64) f64 {
-        return (4 / 3) * (pi() * radius * radius * radius);
+        return (4 / 3) * (pi_value.pi() * radius * radius * radius);
     }
 };

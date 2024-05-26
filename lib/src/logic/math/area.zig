@@ -4,7 +4,7 @@ const pi_value = @import("./pi.zig");
 const Area  = struct {
     // Area of a Circle
     pub fn circle(radius: f64) f64 {
-        return pi() * (radius * radius);
+        return pi_value.pi() * (radius * radius);
     }
 
     // Area of a Cube
@@ -14,12 +14,12 @@ const Area  = struct {
 
     // Area of a Cylinder
     pub fn cylinder(height: f64, radius: f64) f64 {
-        return (2 * height * pi() * radius) + (2 * pi() * radius * radius);
+        return (2 * height * pi_value.pi() * radius) + (2 * pi_value.pi() * radius * radius);
     }
 
     // Area of a Hemisphere
     pub fn hemisphere(radius: f64) f64 {
-        return 3 * (pi() * radius * radius);
+        return 3 * (pi_value.pi() * radius * radius);
     }
 
     // Area of a Parallelogram
@@ -34,7 +34,7 @@ const Area  = struct {
 
     // Area of a Sphere
     pub fn sphere(radius: f64) f64 {
-        return 4 * (pi() * radius * radius);
+        return 4 * (pi_value.pi() * radius * radius);
     }
 
     // Area of a Square

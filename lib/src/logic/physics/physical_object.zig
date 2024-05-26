@@ -1,7 +1,7 @@
 // Definition of Objects
 const PhysicalObject = struct {
     // Density of Objects
-    pub fn cdensity(mass: f64, volume: f64) f64 {
+    pub fn density(mass: f64, volume: f64) f64 {
         return mass / volume;
     }
 
