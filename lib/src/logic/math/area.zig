@@ -1,4 +1,4 @@
-const piValue = @import("./pi.zig");
+const pi_value = @import("./pi.zig");
 
 // Area of Objects
 const Area  = struct {
