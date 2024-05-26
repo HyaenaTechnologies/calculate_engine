@@ -1,3 +1,5 @@
+const piValue = @import("./pi.zig");
+
 // Area of Objects
 const Area  = struct {
     // Area of a Circle

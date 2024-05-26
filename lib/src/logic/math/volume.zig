@@ -1,3 +1,5 @@
+const piValue = @import("./pi.zig");
+
 // Volume of Objects
 const Volume = struct {
     // Volume of a Cone
