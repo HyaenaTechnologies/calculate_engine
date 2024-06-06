@@ -1,3 +1,4 @@
+[Android]: https://developer.android.com/studio
 [Dart]: https://dart.dev/
 [Fleet]: https://jetbrains.com/fleet/
 [IDEA]: https://jetbrains.com/idea/
@@ -21,6 +22,7 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 
 ## Build
 
+- [Android Studio][Android]
 - [Dart Language][Dart]
 - [IntelliJ IDEA][IDEA]
 - [JetBrains Fleet][Fleet] 
