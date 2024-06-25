@@ -1,4 +1,4 @@
-import 'package:calculate_engine/src/logic//math/pi.dart';
+import 'package:calculate_engine/src/logic/math/constant/pi.dart';
 
 // Area of Objects
 class Area {

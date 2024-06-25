@@ -3,15 +3,15 @@ class GraphModel {
   double edge;
   double vertex;
 
-  // Insert Edge to Graph
+  // Insert Edge
   double insert_edge() {}
 
-  // Insert Vertex to Graph
+  // Insert Vertex
   double insert_vertex() {}
 
-  // Remove Edge in Graph
+  // Remove Edge
   double remove_edge() {}
 
-  // Remove Vertex in Graph
+  // Remove Vertex
   double remove_vertex() {}
 }
