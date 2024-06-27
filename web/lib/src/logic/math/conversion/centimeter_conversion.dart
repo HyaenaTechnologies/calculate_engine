@@ -1,67 +1,67 @@
 // Centimeter Conversion
 
 // Decameters to Centimeters
-double decameters_to_centimeters(double decameters) {
+double decametersToCentimeters(double decameters) {
   return decameters * 1000;
 }
 
 // Decimeters to Centimeters
-double decimeters_to_centimeters(double decimeters) {
+double decimetersToCentimeters(double decimeters) {
   return decimeters * 10;
 }
 
 // Feet to Centimeters
-double feet_to_centimeters(double feet) {
+double feetToCentimeters(double feet) {
   return feet * 30.48;
 }
 
 // Hectometers to Centimeters
-double hectometers_to_centimeters(double hectometers) {
+double hectometersToCentimeters(double hectometers) {
   return hectometers * 10000;
 }
 
 // Inches to Centimeters
-double inches_to_centimeters(double inches) {
+double inchesToCentimeters(double inches) {
   return inches * 2.54;
 }
 
 // Kilometers to Centimeters
-double kilometers_to_centimeters(double kilometers) {
+double kilometersToCentimeters(double kilometers) {
   return kilometers * 100000;
 }
 
 // Meters to Centimeters
-double meters_to_centimeters(double meters) {
+double metersToCentimeters(double meters) {
   return meters * 100;
 }
 
 // Micrometers to Centimeters
-double micrometers_to_centimeters(double micrometers) {
+double micrometersToCentimeters(double micrometers) {
   return micrometers * -10000;
 }
 
 // Miles to Centimeters
-double miles_to_centimeters(double miles) {
+double milesToCentimeters(double miles) {
   return miles * 160934.4;
 }
 
 // Millimeters to Centimeters
-double millimeters_to_centimeters(double millimeters) {
+double millimetersToCentimeters(double millimeters) {
   return millimeters * 0.1;
 }
 
 // Nanometers to Centimeters
-double nanometers_to_centimeters(double nanometers) {
+double nanometersToCentimeters(double nanometers) {
   return nanometers * -10000000;
 }
 
 // Nautical Miles to Centimeters
-double nautical_miles_to_centimeters(double nauticalMiles) {
+double nauticalMilesToCentimeters(double nauticalMiles) {
   return nauticalMiles * 185200.1;
 }
 
 // Picometers to Centimeters
-double picometers_to_centimeters(double picometers) {
+double picometersToCentimeters(double picometers) {
   return picometers * -10000000000;
 }
 
