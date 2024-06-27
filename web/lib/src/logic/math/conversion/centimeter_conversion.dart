@@ -42,7 +42,7 @@ double micrometers_to_centimeters(double micrometers) {
 
 // Miles to Centimeters
 double miles_to_centimeters(double miles) {
-  return miles * (1.609344 * 100000);
+  return miles * 160934.4;
 }
 
 // Millimeters to Centimeters
@@ -57,7 +57,7 @@ double nanometers_to_centimeters(double nanometers) {
 
 // Nautical Miles to Centimeters
 double nautical_miles_to_centimeters(double nauticalMiles) {
-  return nauticalMiles * (1.852001 * 100000);
+  return nauticalMiles * 185200.1;
 }
 
 // Picometers to Centimeters

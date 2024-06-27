@@ -42,7 +42,7 @@ pub fn micrometers_to_centimeters(micrometers: f64) f64 {
 
 // Miles to Centimeters
 pub fn miles_to_centimeters(miles: f64) f64 {
-    return miles * (1.609344 * 100000);
+    return miles * 160934.4;
 }
 
 // Millimeters to Centimeters
@@ -57,7 +57,7 @@ pub fn nanometers_to_centimeters(nanometers: f64) f64 {
 
 // Nautical Miles to Centimeters
 pub fn nautical_miles_to_centimeters(nauticalMiles: f64) f64 {
-    return nauticalMiles * (1.852001 * 100000);
+    return nauticalMiles * 185200.1;
 }
 
 // Picometers to Centimeters
