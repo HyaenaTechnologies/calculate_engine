@@ -1,4 +1,4 @@
-// Definition of Objects
+// Specification of Objects
 
 // Density of Objects
 pub fn density(mass: f64, volume: f64) f64 {

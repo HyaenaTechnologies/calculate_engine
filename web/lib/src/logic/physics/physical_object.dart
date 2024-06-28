@@ -1,4 +1,4 @@
-// Definition of Objects
+// Specification of Objects
 
 // Density of Objects
 double density(double mass, double volume) {
