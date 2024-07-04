@@ -66,6 +66,6 @@ double picometersToCentimeters(double picometers) {
 }
 
 // Yards to Centimeters
-double YardsToCentimeters(double yards) {
+double yardsToCentimeters(double yards) {
   return yards * 91.44;
 }
