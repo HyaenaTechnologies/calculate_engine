@@ -1,4 +1,5 @@
 [Android]: https://developer.android.com/studio
+[C Language]: https://isocpp.org/
 [Dart]: https://dart.dev/
 [Fleet]: https://jetbrains.com/fleet/
 [IDEA]: https://jetbrains.com/idea/
@@ -22,6 +23,7 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 
 ## Build
 
+- [C][C Language]
 - [Android Studio][Android]
 - [Dart Language][Dart]
 - [IntelliJ IDEA][IDEA]
