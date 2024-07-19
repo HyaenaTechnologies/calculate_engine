@@ -10,7 +10,7 @@ dependencies:
   csslib: ^1.0.0
   file: ^7.0.0
   glob: ^2.1.2
-  http: ^1.2.1
+  http: ^1.2.2
   http2: ^2.3.0
   http_multi_server: ^3.2.1
   http_parser: ^4.1.0
@@ -31,15 +31,15 @@ dependencies:
   shelf_static: ^1.1.2
   shelf_test_handler: ^2.0.2
   shelf_web_socket: ^2.0.0
-  sse: ^4.1.5
+  sse: ^4.1.6
   stack_trace: ^1.11.1
   stream_channel: ^2.1.2
   stream_transform: ^2.1.0
   sync_http: ^0.3.1
   term_glyph: ^1.2.1
   vector_math: ^2.1.4
-  web: ^0.5.1
-  web_socket_channel: ^3.0.0
+  web: ^1.0.0
+  web_socket_channel: ^3.0.1
 
 
 description: "Open Source Mathematics Engine"
