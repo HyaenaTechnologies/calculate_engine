@@ -16,6 +16,5 @@ updates:
       day: "saturday"
       interval: "weekly"
       time: "03:00"
-    versioning-strategy: auto
     
 version: 2
