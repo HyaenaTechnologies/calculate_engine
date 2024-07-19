@@ -38,7 +38,7 @@ dependencies:
   sync_http: ^0.3.1
   term_glyph: ^1.2.1
   vector_math: ^2.1.4
-  web: ^0.5.1
+  web: ">=0.5.1 <2.0.0"
   web_socket_channel: ^3.0.0
 
 
