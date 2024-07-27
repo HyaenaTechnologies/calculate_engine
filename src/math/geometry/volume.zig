@@ -1,4 +1,4 @@
-const pi_value = @import("/lib/src/math/constant/pi.zig");
+const pi_value = @import("/src/math/constant/pi.zig");
 
 // Volume of Objects
 
