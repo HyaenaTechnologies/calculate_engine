@@ -11,7 +11,7 @@
 <a href="https://github.com/HyaenaTechnologies/calculate_engine">
   <h1>
     <picture>
-      <img src="https://github.com/HyaenaTechnologies/calculate_engine/blob/main/lib/assets/hce_markdown.png" alt="">
+      <img src="https://github.com/HyaenaTechnologies/calculate_engine/blob/main/assets/hce_markdown.png" alt="">
     </picture>
   </h1>
 </a>
