@@ -1,5 +1,5 @@
 // Length Units
-const lengthUnits = [18]u8{
+const char lengthUnits[18][18] = {
   "Astronomical Unit",
   "Centimeter",
   "Decameter",
