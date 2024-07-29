@@ -1,0 +1,18 @@
+.{
+    .name = "calculate_engine",
+    .paths = .{
+        "src",
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+    .dependencies = .{
+        .null_dependency = .{
+            .url = "",
+            .hash = "",
+            .lazy = true,
+        },
+    },
+    .version = "0.2.0",
+}
