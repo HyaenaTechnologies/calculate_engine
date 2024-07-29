@@ -1,8 +1,8 @@
 // Motion of Objects
 
 // Acceleration of Objects
-pub fn acceleration(final_velocity: f64, initial_velocity: f64, time: f64) f64 {
-    return (final_velocity - initial_velocity) / time;
+pub fn acceleration(finalVelocity: f64, initialVelocity: f64, time: f64) f64 {
+    return (finalVelocity - initialVelocity) / time;
 }
 
 // Momentum of Objects

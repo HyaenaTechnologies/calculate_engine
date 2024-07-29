@@ -21,6 +21,6 @@ pub fn pressure(force: f64, acceleration: f64) f64 {
 }
 
 // Weight of Objects
-pub fn weight(mass: f64, gravitational_acceleration: f64) f64 {
-    return mass * gravitational_acceleration;
+pub fn weight(mass: f64, gravitationalAcceleration: f64) f64 {
+    return mass * gravitationalAcceleration;
 }
