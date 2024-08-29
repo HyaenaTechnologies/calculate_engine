@@ -1,8 +1,5 @@
-[Android]: https://developer.android.com/studio
-[C Language]: https://isocpp.org/
-[Dart]: https://dart.dev/
+[C Language]: https://learn.microsoft.com/en-us/cpp/c-language
 [Fleet]: https://jetbrains.com/fleet/
-[IDEA]: https://jetbrains.com/idea/
 [Rice]: https://rice.edu
 [Stax]: https://openstax.org]
 [VSCode]: https://code.visualstudio.com/docs
@@ -24,17 +21,9 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 ## Build
 
 - [C][C Language]
-- [Android Studio][Android]
-- [Dart Language][Dart]
-- [IntelliJ IDEA][IDEA]
 - [JetBrains Fleet][Fleet] 
 - [Visual Studio Code][VSCode]
 - [Zig][Zig Language]
-
-```shell
-git clone
-
-dart compile
 ```
 
 &&
