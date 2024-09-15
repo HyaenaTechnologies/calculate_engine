@@ -8,15 +8,17 @@
 <a href="https://github.com/HyaenaTechnologies/calculate_engine">
   <h1>
     <picture>
-      <img src="https://github.com/HyaenaTechnologies/calculate_engine/blob/main/assets/hce_markdown.png" alt="">
+      <img src="https://github.com/HyaenaTechnologies/calculate_engine_desktop/blob/main/assets/hce_markdown.png" alt="">
     </picture>
   </h1>
 </a>
 
-# Calculate Engine
+# Calculate Engine Desktop
 
 Calculate Engine is an Open Source Mathematics Engine. The function is to provide Calculators, 
 Steps and promote [OpenStax][Stax], [Rice University][Rice].
+
+Calculate Engine Desktop is the Desktop Implementation of the Calculate Engine
 
 ## Build
 
@@ -24,9 +26,6 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 - [JetBrains Fleet][Fleet] 
 - [Visual Studio Code][VSCode]
 - [Zig][Zig Language]
-```
-
-&&
 
 ```shell
 git clone
