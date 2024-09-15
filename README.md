@@ -1,7 +1,7 @@
 [C Language]: https://learn.microsoft.com/en-us/cpp/c-language
 [Fleet]: https://jetbrains.com/fleet/
 [Rice]: https://rice.edu
-[Stax]: https://openstax.org]
+[Stax]: https://openstax.org
 [VSCode]: https://code.visualstudio.com/docs
 [Zig Language]: https://ziglang.org/
 
