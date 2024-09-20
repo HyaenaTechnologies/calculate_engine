@@ -1,5 +1,5 @@
 .{
-    .name = "calculate_engine",
+    .name = "data_interchange",
     .paths = .{
         "src",
         "build.zig",
