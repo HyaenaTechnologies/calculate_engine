@@ -9,9 +9,11 @@
 [YAML]: https://yaml.org/
 [Zig Language]: https://ziglang.org/
 
-# Data Interchange
+# Data Interchange Desktop
 
-Data Interchange Format Implementations
+Data Interchange is a Network Application Programming Interface Platform
+
+Data Interchange Desktop is the Desktop implementation of Data Interchange
 
 ## Features
 
