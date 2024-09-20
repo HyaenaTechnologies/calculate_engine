@@ -1,6 +1,7 @@
 [C Language]: https://learn.microsoft.com/en-us/cpp/c-language
 [CommonMark]:https://commonmark.org/
 [Fleet]: https://jetbrains.com/fleet/
+[Hypertext Transfer Protocol]: https://developer.mozilla.org/en-US/docs/Web/HTTP
 [JSON]: https://www.json.org/json-en.html
 [TOML]: https://toml.io/en/
 [VSCode]: https://code.visualstudio.com/docs
@@ -14,10 +15,17 @@ Data Interchange Format Implementations
 
 ## Features
 
+- Domain Name System Protocol
 - Extensible Markup Language
+- [Hypertext Transfer Protocol][Hypertext Transfer Protocol]
+- Internet Protocol
 - [JavaScript Object Notation][JSON]
 - [Markdown][CommonMark]
 - [Tom's Obvious Minimal Language][TOML]
+- Transmission Control Protocol
+- Transport Layer Security
+- User Datagram Protocol
+- Web Socket Protocol
 - [Yet Another Markup Language][YAML]
 
 ## Build
