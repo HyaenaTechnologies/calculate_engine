@@ -4,8 +4,11 @@
 [Hypertext Transfer Protocol]: https://developer.mozilla.org/en-US/docs/Web/HTTP
 [JSON]: https://www.json.org/json-en.html
 [TOML]: https://toml.io/en/
+[Unix]: https://publications.opengroup.org/
+[Unix-Like]: https://docs.kernel.org/
 [VSCode]: https://code.visualstudio.com/docs
 [Vulkan]: https://www.vulkan.org/learn
+[Win32]: https://learn.microsoft.com/en-us/windows/apps/desktop/
 [YAML]: https://yaml.org/
 [Zig Language]: https://ziglang.org/
 
@@ -42,9 +45,12 @@ Data Interchange Desktop is the Desktop implementation of Data Interchange
 ## Build
 
 - [C][C Language]
-- [JetBrains Fleet][Fleet] 
+- [JetBrains Fleet][Fleet]
+- [Linux][Unix-Like] 
+- [Single Unix Specification][Unix]
 - [Visual Studio Code][VSCode]
 - [Vulkan SDK][Vulkan]
+- [Windows][Win32]
 - [Zig][Zig Language]
 
 ```shell
