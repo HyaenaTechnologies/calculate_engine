@@ -9,6 +9,14 @@
 [YAML]: https://yaml.org/
 [Zig Language]: https://ziglang.org/
 
+<a href="https://github.com/HyaenaTechnologies/hyaena_technologies">
+  <h1>
+    <picture>
+      <img src="https://github.com/HyaenaTechnologies/data_interchange_desktop/blob/main/assets/di_markdown.png" alt="">
+    </picture>
+  </h1>
+</a>
+
 # Data Interchange Desktop
 
 Data Interchange is a Network Application Programming Interface Platform
