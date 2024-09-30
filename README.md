@@ -12,10 +12,10 @@
 [YAML]: https://yaml.org/
 [Zig Language]: https://ziglang.org/
 
-<a href="https://github.com/HyaenaTechnologies/hyaena_technologies">
+<a href="https://github.com/HyaenaTechnologies/data-interchange-desktop">
   <h1>
     <picture>
-      <img src="https://github.com/HyaenaTechnologies/data_interchange_desktop/blob/main/assets/di_markdown.png" alt="">
+      <img src="https://github.com/HyaenaTechnologies/data-interchange-desktop/blob/main/assets/di_markdown.png" alt="">
     </picture>
   </h1>
 </a>
